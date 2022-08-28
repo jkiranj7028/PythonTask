@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Kiran') {
+        stage('Python Test Job') {
             steps {
                 echo 'Building..'
             }
@@ -10,11 +10,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                step 'python3 --version'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'python3 random.py'
             }
         }
     }
