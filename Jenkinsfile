@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                // 'python3 --version'
+                bat 'python3 --version'
             }
         }
         stage('Deploy') {
