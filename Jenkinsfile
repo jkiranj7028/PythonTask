@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'python3 random.py'
+                //sh 'python3 random.py'
             }
         }
     }
