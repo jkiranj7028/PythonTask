@@ -9,4 +9,5 @@ class student(object):
         print("Branch:", self.branch)
         print("year:",self.year)
 obj1=student("kiran", "EEE", 2005)
+
 obj1.print_details()
